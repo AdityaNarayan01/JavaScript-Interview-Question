@@ -1,8 +1,11 @@
-let randomValue = { name: "Lydia" };
-randomValue = 23;
+let count = 0;
+const nums = [0, 1, 2, 3];
 
-if (!typeof randomValue === "string") {
-  console.log("It's not a string!");
-} else {
-  console.log("Yay it's a string!");
+for(var i in nums){
+	if (i) 
+    {
+        console.log(i)
+        count += 1
+    }
 }
+console.log(count)
